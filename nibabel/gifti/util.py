@@ -66,7 +66,7 @@ gifti_encoding_codes = Recoder((
                                 (0, "undef", "GIFTI_ENCODING_UNDEF", "undef"),
                                 (1, "ASCII", "GIFTI_ENCODING_ASCII", "ASCII"),
                                 (2, "B64BIN", "GIFTI_ENCODING_B64BIN", "Base64Binary" ),
-                                (3, "B64GZ", "GIFTI_ENCODING_B64GZ", "GZipBase64Binary"),
+                                (3, "B64GZ", "GZipBase64Binary", "GIFTI_ENCODING_B64GZ"),
                                 (4, "External", "GIFTI_ENCODING_EXTBIN", "ExternalFileBinary"),
                                 ), fields = ('code', 'label', 'giistring', 'specs'))
 

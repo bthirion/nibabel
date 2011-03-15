@@ -204,7 +204,7 @@ def data_tag(dataarray, encoding, datatype, ordering):
         cout.seek(0)
         da = cout.read()
 
-    elif encoding == "GIFTI_ENCODING_B64GZ":        
+    elif (encoding == "GIFTI_ENCODING_B64GZ") or (encoding == "GZipBase64Binary"):        
         # first compress
         comp = zlib.compress(dataarray.tostring(ord))
         c = StringIO(comp)
